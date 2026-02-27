@@ -36,8 +36,8 @@ const ConsultingServices = () => {
 
                     <div className="grid md:grid-cols-2 gap-8">
                         {/* Area 1 */}
-                        <div className="glass p-8 rounded-2xl shadow-sm border border-gray-100 flex items-start group hover:shadow-md transition-shadow">
-                            <div className="flex-shrink-0 mr-6">
+                        <div className="glass p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row items-center md:items-start text-center md:text-left group hover:shadow-md transition-shadow">
+                            <div className="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
                                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 group-hover:scale-110 transition-transform">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
@@ -51,8 +51,8 @@ const ConsultingServices = () => {
                         </div>
 
                         {/* Area 2 */}
-                        <div className="glass p-8 rounded-2xl shadow-sm border border-gray-100 flex items-start group hover:shadow-md transition-shadow">
-                            <div className="flex-shrink-0 mr-6">
+                        <div className="glass p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row items-center md:items-start text-center md:text-left group hover:shadow-md transition-shadow">
+                            <div className="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
                                 <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center text-green-600 group-hover:scale-110 transition-transform">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
@@ -66,8 +66,8 @@ const ConsultingServices = () => {
                         </div>
 
                         {/* Area 3 */}
-                        <div className="glass p-8 rounded-2xl shadow-sm border border-gray-100 flex items-start group hover:shadow-md transition-shadow">
-                            <div className="flex-shrink-0 mr-6">
+                        <div className="glass p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row items-center md:items-start text-center md:text-left group hover:shadow-md transition-shadow">
+                            <div className="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
                                 <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center text-indigo-600 group-hover:scale-110 transition-transform">
                                     <BookOpen className="w-6 h-6" />
                                 </div>
@@ -81,8 +81,8 @@ const ConsultingServices = () => {
                         </div>
 
                         {/* Area 4 */}
-                        <div className="glass p-8 rounded-2xl shadow-sm border border-gray-100 flex items-start group hover:shadow-md transition-shadow">
-                            <div className="flex-shrink-0 mr-6">
+                        <div className="glass p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row items-center md:items-start text-center md:text-left group hover:shadow-md transition-shadow">
+                            <div className="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
                                 <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center text-purple-600 group-hover:scale-110 transition-transform">
                                     <Briefcase className="w-6 h-6" />
                                 </div>

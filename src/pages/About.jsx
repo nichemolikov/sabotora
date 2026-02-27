@@ -22,8 +22,8 @@ const About = () => {
                 <div className="grid md:grid-cols-2 gap-16 items-center mb-24">
 
                     {/* Text Content */}
-                    <div>
-                        <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+                    <div className="text-center md:text-left">
+                        <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center justify-center md:justify-start">
                             {t('about.mission.title')}
                             <Target className="ml-3 text-blue-600 w-8 h-8" />
                         </h2>
@@ -43,11 +43,11 @@ const About = () => {
                             alt="Professional office environment"
                             className="relative rounded-2xl shadow-xl border border-gray-100"
                         />
-                        <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg border border-gray-100 flex items-center">
-                            <div className="bg-blue-100 p-3 rounded-full mr-4">
+                        <div className="absolute -bottom-6 inset-x-4 md:inset-x-auto md:-left-6 bg-white p-4 md:p-6 rounded-xl shadow-lg border border-gray-100 flex items-center justify-center md:justify-start">
+                            <div className="bg-blue-100 p-3 rounded-full mr-4 flex-shrink-0">
                                 <MapPin className="text-blue-600 w-6 h-6" />
                             </div>
-                            <div>
+                            <div className="text-left">
                                 <p className="text-sm text-gray-500 font-medium">{t('about.mission.hq_label')}</p>
                                 <p className="font-bold text-brand-dark">{t('about.mission.hq_val')}</p>
                             </div>

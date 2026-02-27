@@ -48,12 +48,12 @@ const TranslationServices = () => {
                 {/* Quality Assurance & Compliance */}
                 <div className="bg-white rounded-3xl p-10 shadow-sm border border-gray-100 mb-16">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
-                        <div>
+                        <div className="text-center md:text-left">
                             <h2 className="text-3xl font-bold text-gray-900 mb-6">{t('translation.qa.title')}</h2>
                             <p className="text-gray-700 leading-relaxed mb-6 text-lg">
                                 {t('translation.qa.p1')}
                             </p>
-                            <ul className="space-y-4">
+                            <ul className="space-y-4 text-left inline-block w-full sm:w-auto">
                                 <li className="flex items-start">
                                     <CheckCircle2 className="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-0.5" />
                                     <span className="text-gray-700">{t('translation.qa.li1')}</span>
@@ -69,17 +69,17 @@ const TranslationServices = () => {
                             </ul>
                         </div>
 
-                        <div className="bg-indigo-50 rounded-2xl p-8 border border-indigo-100">
-                            <h3 className="text-xl font-bold text-indigo-900 mb-6">{t('translation.qa.sup_title')}</h3>
-                            <div className="grid grid-cols-2 gap-y-4 gap-x-2">
+                        <div className="bg-indigo-50 rounded-2xl p-6 sm:p-8 border border-indigo-100 flex flex-col justify-center">
+                            <h3 className="text-xl font-bold text-indigo-900 mb-6 text-center sm:text-left">{t('translation.qa.sup_title')}</h3>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-2">
                                 {languages.map((lang, index) => (
-                                    <div key={index} className="flex items-center text-indigo-800 font-medium bg-white px-3 py-2 rounded-lg shadow-sm">
-                                        <div className="w-2 h-2 rounded-full bg-indigo-500 mr-2"></div>
-                                        {lang}
+                                    <div key={index} className="flex items-center text-indigo-800 font-medium bg-white px-4 py-3 sm:px-3 sm:py-2 rounded-lg shadow-sm">
+                                        <div className="w-2 h-2 rounded-full bg-indigo-500 mr-3 sm:mr-2 flex-shrink-0"></div>
+                                        <span className="break-words">{lang}</span>
                                     </div>
                                 ))}
                             </div>
-                            <p className="mt-6 text-sm text-indigo-600 font-medium italic">
+                            <p className="mt-6 text-sm text-indigo-600 font-medium italic text-center sm:text-left">
                                 {t('translation.qa.disclaimer')}
                             </p>
                         </div>
@@ -91,18 +91,18 @@ const TranslationServices = () => {
                     <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">{t('translation.docs.title')}</h2>
                     <div className="grid md:grid-cols-2 gap-8">
                         {documentTypes.map((type, index) => (
-                            <div key={index} className="glass p-8 rounded-2xl shadow-sm border border-gray-100">
-                                <div className="flex items-center mb-6">
-                                    <div className={`p-3 rounded-xl mr-4 ${index === 0 ? 'bg-blue-100' : 'bg-indigo-100'}`}>
+                            <div key={index} className="glass p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 text-center sm:text-left flex flex-col sm:block items-center">
+                                <div className="flex flex-col sm:flex-row items-center mb-6">
+                                    <div className={`p-3 rounded-xl mb-4 sm:mb-0 sm:mr-4 flex-shrink-0 ${index === 0 ? 'bg-blue-100' : 'bg-indigo-100'}`}>
                                         {type.icon}
                                     </div>
                                     <h3 className="text-2xl font-bold text-gray-900">{type.title}</h3>
                                 </div>
-                                <ul className="space-y-3">
+                                <ul className="space-y-3 w-full text-left">
                                     {type.items.map((item, itemIndex) => (
-                                        <li key={itemIndex} className="flex items-center text-gray-700 bg-white p-3 rounded-lg border border-gray-100">
-                                            <ChevronRight className="w-4 h-4 text-gray-400 mr-2" />
-                                            {item}
+                                        <li key={itemIndex} className="flex items-start text-gray-700 bg-white p-3 rounded-lg border border-gray-100">
+                                            <ChevronRight className="w-4 h-4 text-gray-400 mr-2 flex-shrink-0 mt-1" />
+                                            <span>{item}</span>
                                         </li>
                                     ))}
                                 </ul>

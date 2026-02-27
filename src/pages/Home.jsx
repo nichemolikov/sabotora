@@ -21,11 +21,11 @@ const Home = () => {
                         <ShieldCheck className="w-4 h-4 mr-2" />
                         {t('home.hero.badge')}
                     </span>
-                    <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-brand-dark mb-6">
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-brand-dark mb-6 leading-tight">
                         {t('home.hero.title1')} <br className="hidden md:block" />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-600">{t('home.hero.title2')}</span>
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-600 block sm:inline mt-2 sm:mt-0">{t('home.hero.title2')}</span>
                     </h1>
-                    <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-600 mb-10">
+                    <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-gray-600 mb-10">
                         {t('home.hero.desc')}
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -51,7 +51,7 @@ const Home = () => {
 
                     <div className="grid md:grid-cols-2 gap-10">
                         {/* Consulting Card */}
-                        <div className="glass p-10 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-200 group">
+                        <div className="glass p-8 md:p-10 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-200 group text-center md:text-left flex flex-col items-center md:items-start">
                             <div className="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 text-blue-600 group-hover:scale-110 transition-transform">
                                 <ShieldCheck className="w-7 h-7" />
                             </div>
@@ -59,18 +59,18 @@ const Home = () => {
                             <p className="text-gray-600 mb-6 line-clamp-3">
                                 {t('home.services.c_desc')}
                             </p>
-                            <ul className="mb-8 space-y-3">
-                                <li className="flex items-center text-gray-700"><CheckCircle2 className="w-5 h-5 text-green-500 mr-2" /> {t('home.services.c_li1')}</li>
-                                <li className="flex items-center text-gray-700"><CheckCircle2 className="w-5 h-5 text-green-500 mr-2" /> {t('home.services.c_li2')}</li>
-                                <li className="flex items-center text-gray-700"><CheckCircle2 className="w-5 h-5 text-green-500 mr-2" /> {t('home.services.c_li3')}</li>
+                            <ul className="mb-8 space-y-3 w-full max-w-xs mx-auto md:mx-0 text-left">
+                                <li className="flex items-center text-gray-700"><CheckCircle2 className="w-5 h-5 text-green-500 mr-2 flex-shrink-0" /> <span>{t('home.services.c_li1')}</span></li>
+                                <li className="flex items-center text-gray-700"><CheckCircle2 className="w-5 h-5 text-green-500 mr-2 flex-shrink-0" /> <span>{t('home.services.c_li2')}</span></li>
+                                <li className="flex items-center text-gray-700"><CheckCircle2 className="w-5 h-5 text-green-500 mr-2 flex-shrink-0" /> <span>{t('home.services.c_li3')}</span></li>
                             </ul>
-                            <NavLink to="/services/consulting" className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 transition-colors">
+                            <NavLink to="/services/consulting" className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 transition-colors mt-auto">
                                 {t('home.services.c_link')} <ArrowRight className="ml-1 w-4 h-4" />
                             </NavLink>
                         </div>
 
                         {/* Translation Card */}
-                        <div className="glass p-10 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-200 group">
+                        <div className="glass p-8 md:p-10 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-200 group text-center md:text-left flex flex-col items-center md:items-start">
                             <div className="w-14 h-14 bg-indigo-100 rounded-xl flex items-center justify-center mb-6 text-indigo-600 group-hover:scale-110 transition-transform">
                                 <Globe className="w-7 h-7" />
                             </div>
@@ -78,12 +78,12 @@ const Home = () => {
                             <p className="text-gray-600 mb-6 line-clamp-3">
                                 {t('home.services.t_desc')}
                             </p>
-                            <ul className="mb-8 space-y-3">
-                                <li className="flex items-center text-gray-700"><CheckCircle2 className="w-5 h-5 text-green-500 mr-2" /> {t('home.services.t_li1')}</li>
-                                <li className="flex items-center text-gray-700"><CheckCircle2 className="w-5 h-5 text-green-500 mr-2" /> {t('home.services.t_li2')}</li>
-                                <li className="flex items-center text-gray-700"><CheckCircle2 className="w-5 h-5 text-green-500 mr-2" /> {t('home.services.t_li3')}</li>
+                            <ul className="mb-8 space-y-3 w-full max-w-xs mx-auto md:mx-0 text-left">
+                                <li className="flex items-center text-gray-700"><CheckCircle2 className="w-5 h-5 text-green-500 mr-2 flex-shrink-0" /> <span>{t('home.services.t_li1')}</span></li>
+                                <li className="flex items-center text-gray-700"><CheckCircle2 className="w-5 h-5 text-green-500 mr-2 flex-shrink-0" /> <span>{t('home.services.t_li2')}</span></li>
+                                <li className="flex items-center text-gray-700"><CheckCircle2 className="w-5 h-5 text-green-500 mr-2 flex-shrink-0" /> <span>{t('home.services.t_li3')}</span></li>
                             </ul>
-                            <NavLink to="/services/translation" className="inline-flex items-center text-indigo-600 font-semibold hover:text-indigo-800 transition-colors">
+                            <NavLink to="/services/translation" className="inline-flex items-center text-indigo-600 font-semibold hover:text-indigo-800 transition-colors mt-auto">
                                 {t('home.services.t_link')} <ArrowRight className="ml-1 w-4 h-4" />
                             </NavLink>
                         </div>
