@@ -11,7 +11,13 @@ export default {
         hero: {
             badge: "Razgrad's Premier Consulting & Translation Partner",
             title1: "Global compliance and",
-            title2: "communication made clear.",
+            title_end: "made clear.",
+            words: {
+                w1: "communication",
+                w2: "translations",
+                w3: "legalization",
+                w4: "expertise"
+            },
             desc: "Sabotora provides professional consulting and translation services for businesses in Bulgaria and beyond. Emphasizing confidentiality, accuracy, and local expertise.",
             btn_consult: "Explore Consulting",
             btn_trans: "Professional Translation"

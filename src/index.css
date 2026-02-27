@@ -14,7 +14,9 @@
   .glass {
     @apply bg-white/70 backdrop-blur-md border border-white/20;
   }
+
   .glass-dark {
     @apply bg-brand-dark/80 backdrop-blur-lg border border-white/10;
   }
+
 }

@@ -2,9 +2,17 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { ShieldCheck, Globe, CheckCircle2, ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { FlipWords } from '../components/ui/flip-words';
 
 const Home = () => {
     const { t } = useTranslation();
+
+    const words = [
+        t('home.hero.words.w1'),
+        t('home.hero.words.w2'),
+        t('home.hero.words.w3'),
+        t('home.hero.words.w4'),
+    ];
 
     return (
         <div className="flex flex-col min-h-screen">
@@ -23,7 +31,13 @@ const Home = () => {
                     </span>
                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-brand-dark mb-6 leading-tight">
                         {t('home.hero.title1')} <br className="hidden md:block" />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-600 block sm:inline mt-2 sm:mt-0">{t('home.hero.title2')}</span>
+
+                        <div className="mt-2 min-h-[1.5em] flex flex-wrap justify-center items-center gap-x-2">
+                            <FlipWords words={words} className="text-blue-600 font-extrabold" />
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-600">
+                                {t('home.hero.title_end')}
+                            </span>
+                        </div>
                     </h1>
                     <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-gray-600 mb-10">
                         {t('home.hero.desc')}

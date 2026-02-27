@@ -11,7 +11,13 @@ export default {
         hero: {
             badge: "Razgrad'ın Lider Danışmanlık ve Tercüme Ortağı",
             title1: "Küresel uyumluluk ve",
-            title2: "iletişim artık netleşti.",
+            title_end: "artık netleşti.",
+            words: {
+                w1: "iletişim",
+                w2: "çeviri",
+                w3: "tasdik",
+                w4: "uzmanlık"
+            },
             desc: "Sabotora, Bulgaristan ve ötesindeki işletmeler için profesyonel danışmanlık ve tercüme hizmetleri sunmaktadır. Gizlilik, doğruluk ve yerel uzmanlık odak noktamızdır.",
             btn_consult: "Danışmanlığı Keşfedin",
             btn_trans: "Profesyonel Tercüme"
