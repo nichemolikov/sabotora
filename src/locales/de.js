@@ -114,14 +114,22 @@ export default {
             title: "Spezielle Dokumenttypen",
             t1: "Rechtliches & Geschäftliches",
             t1_1: "Verträge und Vereinbarungen",
+            t1_1_def: "Zutreffende Übersetzung von verbindlichen Verträgen, Geheimhaltungsvereinbarungen und Unternehmensvereinbarungen.",
             t1_2: "Gerichtsdokumente",
+            t1_2_def: "Beglaubigte Übersetzungen von Urteilen, Beweismitteln und Gerichtsverfahren.",
             t1_3: "Vollmachten",
+            t1_3_def: "Präzise Übersetzung von Vollmachten zur Sicherstellung der rechtlichen Gültigkeit im Ausland.",
             t1_4: "Firmenregistrierungspapiere",
+            t1_4_def: "Übersetzung von Gründungsurkunden, Satzungen und Handelsregisterauszügen.",
             t2: "Offizielle Zertifikate",
             t2_1: "Geburts- und Heiratsurkunden",
+            t2_1_def: "Beglaubigte Übersetzungen für Personenstandsurkunden, die von lokalen Behörden benötigt werden.",
             t2_2: "Diplome und Zeugnisse",
+            t2_2_def: "Offizielle Übersetzung von Bildungsnachweisen für Studium oder Arbeit im Ausland.",
             t2_3: "Pass- und Ausweisübersetzungen",
-            t2_4: "Führerscheine"
+            t2_3_def: "Verifizierte Übersetzung von Ausweisdokumenten für administrative Zwecke.",
+            t2_4: "Führerscheine",
+            t2_4_def: "Übersetzung von Führerscheinen für internationales Fahren oder Umschreiben."
         },
         cert: {
             title: "Beglaubigte Übersetzungen",

@@ -1,5 +1,5 @@
-import React from 'react';
-import { Globe, FileText, CheckCircle2, Lock, FileSignature } from 'lucide-react';
+import React, { useState } from 'react';
+import { Globe, FileText, CheckCircle2, Lock, FileSignature, ChevronRight as ChevronIcon } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
@@ -17,12 +17,22 @@ const TranslationServices = () => {
         {
             title: t('translation.docs.t1'),
             icon: <FileSignature className="w-6 h-6 text-blue-600" />,
-            items: [t('translation.docs.t1_1'), t('translation.docs.t1_2'), t('translation.docs.t1_3'), t('translation.docs.t1_4')]
+            items: [
+                { name: t('translation.docs.t1_1'), def: t('translation.docs.t1_1_def') },
+                { name: t('translation.docs.t1_2'), def: t('translation.docs.t1_2_def') },
+                { name: t('translation.docs.t1_3'), def: t('translation.docs.t1_3_def') },
+                { name: t('translation.docs.t1_4'), def: t('translation.docs.t1_4_def') }
+            ]
         },
         {
             title: t('translation.docs.t2'),
             icon: <FileText className="w-6 h-6 text-indigo-600" />,
-            items: [t('translation.docs.t2_1'), t('translation.docs.t2_2'), t('translation.docs.t2_3'), t('translation.docs.t2_4')]
+            items: [
+                { name: t('translation.docs.t2_1'), def: t('translation.docs.t2_1_def') },
+                { name: t('translation.docs.t2_2'), def: t('translation.docs.t2_2_def') },
+                { name: t('translation.docs.t2_3'), def: t('translation.docs.t2_3_def') },
+                { name: t('translation.docs.t2_4'), def: t('translation.docs.t2_4_def') }
+            ]
         }
     ];
 
@@ -98,14 +108,11 @@ const TranslationServices = () => {
                                     </div>
                                     <h3 className="text-2xl font-bold text-gray-900">{type.title}</h3>
                                 </div>
-                                <ul className="space-y-3 w-full text-left">
+                                <div className="w-full space-y-3">
                                     {type.items.map((item, itemIndex) => (
-                                        <li key={itemIndex} className="flex items-start text-gray-700 bg-white p-3 rounded-lg border border-gray-100">
-                                            <ChevronRight className="w-4 h-4 text-gray-400 mr-2 flex-shrink-0 mt-1" />
-                                            <span>{item}</span>
-                                        </li>
+                                        <AccordionItem key={itemIndex} title={item.name} content={item.def} />
                                     ))}
-                                </ul>
+                                </div>
                             </div>
                         ))}
                     </div>
@@ -130,10 +137,27 @@ const TranslationServices = () => {
 };
 
 // Helper icon component to avoid importing another one just for a list if not needed, or just import it at top
-const ChevronRight = ({ className }) => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-        <polyline points="9 18 15 12 9 6" />
-    </svg>
-)
+const AccordionItem = ({ title, content }) => {
+    const [isOpen, setIsOpen] = useState(false);
+    return (
+        <div className="bg-white rounded-lg border border-gray-100 overflow-hidden text-left">
+            <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="w-full flex items-center justify-between p-3 focus:outline-none hover:bg-gray-50 transition-colors"
+                aria-expanded={isOpen}
+            >
+                <div className="flex items-center text-gray-700 font-medium text-sm sm:text-base">
+                    <ChevronIcon className={`w-4 h-4 text-gray-400 mr-2 flex-shrink-0 transition-transform ${isOpen ? 'rotate-90 text-blue-500' : ''}`} />
+                    <span>{title}</span>
+                </div>
+            </button>
+            {isOpen && (
+                <div className="px-4 pb-3 pt-1 text-sm text-gray-600 bg-gray-50 border-t border-gray-100">
+                    {content}
+                </div>
+            )}
+        </div>
+    );
+};
 
 export default TranslationServices;

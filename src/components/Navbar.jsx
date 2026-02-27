@@ -100,6 +100,21 @@ const Navbar = () => {
                                 {link.name}
                             </NavLink>
                         ))}
+                        <div className="mt-4 border-t border-gray-200 pt-4 px-3 flex flex-col space-y-2">
+                            <div className="flex items-center justify-between text-gray-700 font-medium">
+                                <span className="flex items-center"><Globe className="w-5 h-5 mr-2" /> {t('footer.lang') || "Language"}</span>
+                                <select
+                                    value={i18n.language}
+                                    onChange={changeLanguage}
+                                    className="bg-gray-50 border border-gray-300 rounded-md text-base focus:ring-blue-500 cursor-pointer outline-none py-1 pl-3 pr-8"
+                                >
+                                    <option value="bg">Bulgarian</option>
+                                    <option value="en">English</option>
+                                    <option value="de">German</option>
+                                    <option value="tr">Turkish</option>
+                                </select>
+                            </div>
+                        </div>
                         <NavLink
                             to="/contact"
                             onClick={() => setIsOpen(false)}

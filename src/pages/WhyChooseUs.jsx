@@ -23,9 +23,14 @@ const WhyChooseUs = () => {
                 {/* Core Differentiation Grid */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-24">
                     {/* Card 1 */}
-                    <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all relative overflow-hidden group">
-                        <div className="absolute top-0 right-0 w-24 h-24 bg-blue-50 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110"></div>
-                        <Shield className="w-10 h-10 text-blue-600 mb-6 relative z-10" />
+                    <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all relative overflow-hidden group text-center md:text-left">
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-blue-50 opacity-40 md:opacity-0 pointer-events-none transition-opacity">
+                            <Shield className="w-40 h-40" />
+                        </div>
+                        <div className="absolute top-0 right-0 w-24 h-24 bg-blue-50 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110 hidden md:block"></div>
+                        <div className="flex justify-center md:justify-start">
+                            <Shield className="w-10 h-10 text-blue-600 mb-6 relative z-10" />
+                        </div>
                         <h3 className="text-xl font-bold text-gray-900 mb-3 relative z-10">{t('why.cards.c1_t')}</h3>
                         <p className="text-gray-600 relative z-10">
                             {t('why.cards.c1_d')}
@@ -33,9 +38,14 @@ const WhyChooseUs = () => {
                     </div>
 
                     {/* Card 2 */}
-                    <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all relative overflow-hidden group">
-                        <div className="absolute top-0 right-0 w-24 h-24 bg-indigo-50 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110"></div>
-                        <Award className="w-10 h-10 text-indigo-600 mb-6 relative z-10" />
+                    <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all relative overflow-hidden group text-center md:text-left">
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-indigo-50 opacity-40 md:opacity-0 pointer-events-none transition-opacity">
+                            <Award className="w-40 h-40" />
+                        </div>
+                        <div className="absolute top-0 right-0 w-24 h-24 bg-indigo-50 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110 hidden md:block"></div>
+                        <div className="flex justify-center md:justify-start">
+                            <Award className="w-10 h-10 text-indigo-600 mb-6 relative z-10" />
+                        </div>
                         <h3 className="text-xl font-bold text-gray-900 mb-3 relative z-10">{t('why.cards.c2_t')}</h3>
                         <p className="text-gray-600 relative z-10">
                             {t('why.cards.c2_d')}
@@ -43,9 +53,14 @@ const WhyChooseUs = () => {
                     </div>
 
                     {/* Card 3 */}
-                    <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all relative overflow-hidden group">
-                        <div className="absolute top-0 right-0 w-24 h-24 bg-green-50 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110"></div>
-                        <Target className="w-10 h-10 text-green-600 mb-6 relative z-10" />
+                    <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all relative overflow-hidden group text-center md:text-left">
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-green-50 opacity-40 md:opacity-0 pointer-events-none transition-opacity">
+                            <Target className="w-40 h-40" />
+                        </div>
+                        <div className="absolute top-0 right-0 w-24 h-24 bg-green-50 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110 hidden md:block"></div>
+                        <div className="flex justify-center md:justify-start">
+                            <Target className="w-10 h-10 text-green-600 mb-6 relative z-10" />
+                        </div>
                         <h3 className="text-xl font-bold text-gray-900 mb-3 relative z-10">{t('why.cards.c3_t')}</h3>
                         <p className="text-gray-600 relative z-10">
                             {t('why.cards.c3_d')}
@@ -53,9 +68,14 @@ const WhyChooseUs = () => {
                     </div>
 
                     {/* Card 4 */}
-                    <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all relative overflow-hidden group">
-                        <div className="absolute top-0 right-0 w-24 h-24 bg-purple-50 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110"></div>
-                        <Handshake className="w-10 h-10 text-purple-600 mb-6 relative z-10" />
+                    <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all relative overflow-hidden group text-center md:text-left">
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-purple-50 opacity-40 md:opacity-0 pointer-events-none transition-opacity">
+                            <Handshake className="w-40 h-40" />
+                        </div>
+                        <div className="absolute top-0 right-0 w-24 h-24 bg-purple-50 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110 hidden md:block"></div>
+                        <div className="flex justify-center md:justify-start">
+                            <Handshake className="w-10 h-10 text-purple-600 mb-6 relative z-10" />
+                        </div>
                         <h3 className="text-xl font-bold text-gray-900 mb-3 relative z-10">{t('why.cards.c4_t')}</h3>
                         <p className="text-gray-600 relative z-10">
                             {t('why.cards.c4_d')}

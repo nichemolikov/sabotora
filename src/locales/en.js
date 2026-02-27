@@ -114,14 +114,22 @@ export default {
             title: "Specialized Document Types",
             t1: "Legal & Corporate",
             t1_1: "Contracts & Agreements",
+            t1_1_def: "Accurate translation of binding contracts, NDAs, and corporate agreements.",
             t1_2: "Court Documents",
+            t1_2_def: "Sworn translations of judgments, evidence, and court proceedings.",
             t1_3: "Power of Attorney",
+            t1_3_def: "Precise translation of PoA documents to ensure legal validity abroad.",
             t1_4: "Company Registration Papers",
+            t1_4_def: "Translation of articles of incorporation, bylaws, and business registry extracts.",
             t2: "Official Certificates",
             t2_1: "Birth & Marriage Certificates",
+            t2_1_def: "Certified translations for civil status documents required by local authorities.",
             t2_2: "Diplomas & Transcripts",
+            t2_2_def: "Official translation of educational credentials for study or work abroad.",
             t2_3: "Passport & ID Translation",
-            t2_4: "Driving Licenses"
+            t2_3_def: "Verified translation of identification documents for administrative purposes.",
+            t2_4: "Driving Licenses",
+            t2_4_def: "Translation of driver's licenses for international driving or conversion."
         },
         cert: {
             title: "Certified Translations",

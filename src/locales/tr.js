@@ -114,14 +114,22 @@ export default {
             title: "Uzmanlık Gerektiren Belge Türleri",
             t1: "Hukuki ve Kurumsal",
             t1_1: "Sözleşmeler ve Anlaşmalar",
+            t1_1_def: "Sözleşmelerin, gizlilik anlaşmalarının ve kurumsal sözleşmelerin doğru çevirisi.",
             t1_2: "Mahkeme Evrakları",
+            t1_2_def: "Mahkeme kararlarının, delillerin ve yargı süreçlerinin yeminli tercümesi.",
             t1_3: "Vekaletnameler",
+            t1_3_def: "Yurtdışında hukuki geçerliliği sağlamak için vekaletnamelerin hassas çevirisi.",
             t1_4: "Şirket Kayıt Belgeleri",
+            t1_4_def: "Şirket kuruluş belgeleri, tüzükler ve ticaret sicil kayıtlarının tercümesi.",
             t2: "Resmi Sertifikalar",
             t2_1: "Doğum ve Evlilik Belgeleri",
+            t2_1_def: "Yerel makamlar tarafından talep edilen nüfus kayıt belgelerinin onaylı çevirisi.",
             t2_2: "Diploma ve Transkriptler",
+            t2_2_def: "Yurtdışında eğitim veya çalışma için eğitim belgelerinin resmi tercümesi.",
             t2_3: "Pasaport ve Kimlik Tercümesi",
-            t2_4: "Sürücü Belgeleri"
+            t2_3_def: "İdari işlemler için kimlik belgelerinin doğrulanmış çevirisi.",
+            t2_4: "Sürücü Belgeleri",
+            t2_4_def: "Uluslararası sürüş veya ehliyet değişimi için sürücü belgelerinin tercümesi."
         },
         cert: {
             title: "Yeminli (Onaylı) Tercüme",
