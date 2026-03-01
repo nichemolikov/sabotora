@@ -85,7 +85,7 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             {isOpen && (
-                <div className="md:hidden glass border-b border-gray-200 absolute w-full">
+                <div className="md:hidden glass border-b border-gray-200 absolute w-full top-full left-0 right-0">
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 shadow-lg">
                         {navLinks.map((link) => (
                             <NavLink
