@@ -85,28 +85,28 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             {isOpen && (
-                <div className="md:hidden glass border-b border-gray-200 absolute w-full top-full left-0 right-0">
-                    <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 shadow-lg">
+                <div className="md:hidden bg-white border-b border-gray-200 absolute w-full top-full left-0 right-0 shadow-xl z-50">
+                    <div className="px-4 pt-4 pb-6 space-y-2">
                         {navLinks.map((link) => (
                             <NavLink
                                 key={link.name}
                                 to={link.path}
                                 onClick={() => setIsOpen(false)}
                                 className={({ isActive }) =>
-                                    `block px-3 py-2 rounded-md text-base font-medium ${isActive ? 'bg-blue-50 text-blue-700' : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                                    `block px-4 py-3 rounded-lg text-base font-semibold transition-all duration-200 ${isActive ? 'bg-blue-600 text-white shadow-md' : 'text-gray-800 hover:bg-blue-50 hover:text-blue-700'
                                     }`
                                 }
                             >
                                 {link.name}
                             </NavLink>
                         ))}
-                        <div className="mt-4 border-t border-gray-200 pt-4 px-3 flex flex-col space-y-2">
-                            <div className="flex items-center justify-between text-gray-700 font-medium">
-                                <span className="flex items-center"><Globe className="w-5 h-5 mr-2" /> {t('footer.lang') || "Language"}</span>
+                        <div className="mt-6 pt-6 border-t border-gray-200">
+                            <div className="flex items-center justify-between text-gray-800 font-semibold mb-4">
+                                <span className="flex items-center text-sm"><Globe className="w-5 h-5 mr-2" /> {t('footer.lang') || "Language"}</span>
                                 <select
                                     value={i18n.language}
                                     onChange={changeLanguage}
-                                    className="bg-gray-50 border border-gray-300 rounded-md text-base focus:ring-blue-500 cursor-pointer outline-none py-1 pl-3 pr-8"
+                                    className="bg-white border-2 border-gray-300 rounded-lg text-base font-medium focus:ring-2 focus:ring-blue-500 focus:border-blue-500 cursor-pointer outline-none py-2 pl-3 pr-8 shadow-sm"
                                 >
                                     <option value="bg">Bulgarian</option>
                                     <option value="en">English</option>
@@ -118,7 +118,7 @@ const Navbar = () => {
                         <NavLink
                             to="/contact"
                             onClick={() => setIsOpen(false)}
-                            className="block w-full text-center mt-4 px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700"
+                            className="block w-full text-center mt-4 px-6 py-4 border border-transparent rounded-lg shadow-lg text-base font-bold text-white bg-blue-600 hover:bg-blue-700 transition-all duration-200"
                         >
                             {t('navbar.contact')}
                         </NavLink>
